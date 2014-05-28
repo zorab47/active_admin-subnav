@@ -18,9 +18,19 @@ And then execute:
 
     $ bundle
 
+Add the subnav's styles to your `active_admin.css.scss` stylesheet:
+
+    //= require active_admin/subnav
+
+    // Align subnav with main navigation by padding the width of the site's
+    // titie.
+    #header div.subnav {
+      padding-left: 8.333em;
+    }
+
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/activeadmin-subnav/fork )
+1. Fork it ( https://github.com/zorab47/activeadmin-subnav/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
