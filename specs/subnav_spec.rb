@@ -2,7 +2,7 @@ require 'bundler/setup'
 require 'minitest/autorun'
 require 'minitest/spec/expect'
 
-require 'activeadmin/subnav'
+require 'active_admin/subnav'
 require 'sass-rails'
 
 class Minitest::SharedExamples < Module

@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'activeadmin/subnav/version'
+require 'active_admin/subnav/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "activeadmin-subnav"
+  spec.name          = "active_admin-subnav"
   spec.version       = Activeadmin::Subnav::VERSION
   spec.authors       = ["Charles Maresh"]
   spec.email         = ["charles.maresh@orm-tech.com"]
