@@ -27,4 +27,6 @@ DESC
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "minitest"
+  spec.add_development_dependency "minitest-spec-expect"
+  spec.add_development_dependency "sass-rails"
 end

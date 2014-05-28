@@ -1,6 +1,6 @@
 module ActiveAdmin
   module Subnav
-    module PageExtensions
+    module Page
       extend ActiveSupport::Concern
 
       def show_sub_menu?(*)

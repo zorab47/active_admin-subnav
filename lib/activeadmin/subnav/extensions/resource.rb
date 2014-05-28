@@ -19,6 +19,5 @@ module ActiveAdmin
     def show_sub_menu?(action)
       sub_menu_item? || (has_nested_resources? && ["show", "edit"].include?(action))
     end
-
   end
 end
