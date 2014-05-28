@@ -6,6 +6,8 @@ Currently, ActiveAdmin 1.0pre resets the top navigation menu to display the sub
 navigation menu for all resources related to that parent resource. This gem
 provides a sub navigation menu for those resources.
 
+NOTE: Optional belongs_to configurations are not supported!
+
 ## Installation
 
 Add this line to your application's Gemfile:

@@ -9,7 +9,11 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Charles Maresh"]
   spec.email         = ["charles.maresh@orm-tech.com"]
   spec.summary       = %q{Provide sub-navigation menu for resources belonging to a parent resource.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.description   = <<DESC
+Currently, ActiveAdmin 1.0pre resets the top navigation menu to display the sub
+navigation menu for all resources related to that parent resource. This gem
+provides a sub navigation menu for those resources.
+DESC
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,6 +22,9 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "activeadmin"
+
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "minitest"
 end
