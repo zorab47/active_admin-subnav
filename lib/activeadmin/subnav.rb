@@ -11,6 +11,14 @@ require "activeadmin/subnav/extensions/resource"
 require "activeadmin/subnav/extensions/resource_menu"
 require "activeadmin/subnav/extensions/tabbed_navigation"
 
+module ActiveAdmin
+  module Subnav
+    class Engine < ::Rails::Engine
+    end
+  end
+end
+
+
 # Register a TabbedNavigation view for the sub navigation.
 ActiveAdmin::ViewFactory.register sub_navigation: ActiveAdmin::Views::TabbedNavigation,
                                   header:         ActiveAdmin::Views::HeaderWithSubnav
