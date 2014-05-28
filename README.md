@@ -1,8 +1,8 @@
 # ActiveAdmin::Subnav
 
-Enhanced sub-navigation for nested ActiveAdmin  resources.
+Enhanced sub-navigation for nested ActiveAdmin resources.
 
-Currently, the base ActiveAdmin install resets the top navigation menu to
+Currently, the base [ActiveAdmin][] install resets the top navigation menu to
 display the nested navigation menu, but it can be confusing to lose the main
 navigation context. This project keeps the main navigation visible and displays
 a secondary navigation bar for nested resources.
@@ -40,3 +40,5 @@ Add the subnav's styles to your `active_admin.css.scss` stylesheet:
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+[ActiveAdmin]: https://github.com/gregbell/active_admin
