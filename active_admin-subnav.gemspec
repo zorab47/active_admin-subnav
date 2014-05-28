@@ -14,7 +14,7 @@ Currently, ActiveAdmin 1.0pre resets the top navigation menu to display the sub
 navigation menu for all resources related to that parent resource. This gem
 provides a sub navigation menu for those resources.
 DESC
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/zorab47/active_admin-subnav"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
