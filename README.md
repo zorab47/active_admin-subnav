@@ -14,7 +14,7 @@ a secondary navigation bar for nested resources.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'active_admin-subnav', require: 'active_admin/subnav'
+gem 'active_admin-subnav'
 ```
 
 And then execute:
