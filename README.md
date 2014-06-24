@@ -40,5 +40,10 @@ Add the subnav's styles to your `active_admin.css.scss` stylesheet:
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+ 
+## Versioning
+
+Follows [Semantic Versioning 2.0.0][Semver]
 
 [ActiveAdmin]: https://github.com/gregbell/active_admin
+[Semver]: http://semver.org/spec/v2.0.0.html
