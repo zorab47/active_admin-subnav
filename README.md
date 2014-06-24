@@ -1,5 +1,9 @@
 # ActiveAdmin::Subnav
 
+[![Gem Version](https://badge.fury.io/rb/active_admin-subnav.svg)](http://badge.fury.io/rb/active_admin-subnav)
+
+## Description
+
 Enhanced sub-navigation for nested ActiveAdmin resources.
 
 Currently, the base [ActiveAdmin][] install resets the top navigation menu to
