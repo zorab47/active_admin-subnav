@@ -31,7 +31,7 @@ Add the subnav's styles to your `active_admin.css.scss` stylesheet:
 //= require active_admin/subnav
 
 // Align subnav with main navigation by padding the width of the site's
-// titie.
+// title.
 #header div.subnav {
   padding-left: 8.333em;
 }
