@@ -13,6 +13,52 @@ a secondary navigation bar for nested resources.
 
 **Note**: Optional belongs_to configurations are not supported!
 
+## Usage
+
+Resource `belongs_to` configuration does not require any extra configuration
+beyond the default. Below the Post resource belongs to Site.
+
+```ruby
+# admin/site.rb
+ActiveAdmin.register Site
+
+# admin/post.rb
+ActiveAdmin.register Post do
+  belongs_to :site
+end
+```
+
+Registering `belongs_to` pages requires more setup to properly access the
+parent record. This is a side effect of how [Arbre][] references parent
+HTML nodes. Below a new method, `#site`, is created to provide access to the
+parent record.
+
+```ruby
+# admin/site_statistics.rb
+ActiveAdmin.register_page "Statistics" do
+  belongs_to :site
+
+  content do
+    statistics = site.statistics
+    # ...
+  end
+
+  controller do
+
+    # Provide access to the parent resource record: Site.
+    #
+    # Without this extra setup the parent record will not be accessible. Any
+    # calls to `#parent` will return the Arbre parent element and not the
+    # ActiveAdmin resource.
+    alias_method :site, :parent
+
+    # Expose the method as a helper making it available to the view
+    helper_method :site
+
+  end
+end
+```
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -51,3 +97,4 @@ Follows [Semantic Versioning 2.0.0][Semver]
 
 [ActiveAdmin]: https://github.com/gregbell/active_admin
 [Semver]: http://semver.org/spec/v2.0.0.html
+[Arbre]: https://github.com/activeadmin/arbre
