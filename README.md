@@ -2,14 +2,16 @@
 
 [![Gem Version](https://badge.fury.io/rb/active_admin-subnav.svg)](http://badge.fury.io/rb/active_admin-subnav)
 
-## Description
-
 Enhanced sub-navigation for nested ActiveAdmin resources.
 
-Currently, the base [ActiveAdmin][] install resets the top navigation menu to
-display the nested navigation menu, but it can be confusing to lose the main
-navigation context. This project keeps the main navigation visible and displays
-a secondary navigation bar for nested resources.
+Currently, the base [ActiveAdmin][] resets the top navigation menu to display the
+nested navigation menu, but it can be confusing to lose the main navigation
+context. This project keeps the main navigation visible and displays a secondary
+navigation bar for nested resources.
+
+![ActiveAdmin::Subnav Example](docs/example.png)
+
+Supports both ActiveAdmin v1.0.0+ and older v0.6.4+ versions.
 
 **Note**: Optional belongs_to configurations are not supported!
 
