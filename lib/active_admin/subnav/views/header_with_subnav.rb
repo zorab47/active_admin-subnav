@@ -35,7 +35,7 @@ module ActiveAdmin
         if has_sub_nav?
           div class: "subnav" do
             menu = active_admin_config.sub_navigation_menu
-            insert_tag view_factory.sub_navigation, menu, :class => "tabs"
+            insert_tag view_factory.sub_navigation, menu, class: "header-item tabs"
           end
         end
       end
