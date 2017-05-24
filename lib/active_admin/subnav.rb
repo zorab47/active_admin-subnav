@@ -18,12 +18,9 @@ module ActiveAdmin
   end
 end
 
-
 # Register a TabbedNavigation view for the sub navigation.
 ActiveAdmin::ViewFactory.register sub_navigation: ActiveAdmin::Views::TabbedNavigation,
                                   header:         ActiveAdmin::Views::HeaderWithSubnav
-
-ActiveAdmin::Page.send :include, ActiveAdmin::Subnav::Page
 
 ActiveAdmin.after_load do
   ActiveAdmin::BaseController.send :include, ActiveAdmin::Subnav::MenuExtensions
