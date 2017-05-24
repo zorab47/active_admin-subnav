@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.1] - 2017-05-24
+
+### Fixed
+
+- Add CSS class for `header-item` to sub-navigation to be consistent with
+  ActiveAdmin
+
 ## [1.1.0] - 2017-05-24
 
 ### Added
