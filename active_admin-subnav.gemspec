@@ -10,14 +10,15 @@ Gem::Specification.new do |spec|
   spec.email         = ["charles.maresh@orm-tech.com"]
   spec.summary       = %q{Provide sub-navigation menu for resources belonging to a parent resource.}
   spec.description   = <<DESC
-Currently, ActiveAdmin 1.0pre resets the top navigation menu to display the sub
-navigation menu for all resources related to that parent resource. This gem
-provides a sub navigation menu for those resources.
+Currently, ActiveAdmin resets the top navigation menu to display the sub
+navigation menu for all resources related to the parent resource. This gem
+adds a sub-navigation menu for those resources.
 DESC
   spec.homepage      = "https://github.com/zorab47/active_admin-subnav"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0")
+  spec.files         = `git ls-files -z app lib`.split("\x0") + ["Changelog.md", "LICENSE.txt", "README.md"]
+
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
