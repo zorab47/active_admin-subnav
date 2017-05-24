@@ -3,7 +3,13 @@ module ActiveAdmin
     class HeaderWithSubnav < Component
 
       def build(namespace, menu)
-        super(id: "header")
+        klass = if has_sub_nav?
+                  "header_with_subnav"
+                else
+                  "header"
+                end
+
+        super(id: "header", class: klass)
 
         @namespace = namespace
         @menu = menu
