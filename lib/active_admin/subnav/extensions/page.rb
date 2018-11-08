@@ -9,5 +9,9 @@ module ActiveAdmin
     def show_sub_menu?(*)
       false
     end
+
+    def has_nested_resources?
+      false
+    end
   end
 end
