@@ -51,6 +51,10 @@ describe "activeadmin-subnav" do
     it "to never show sub menus" do
       expect(page.show_sub_menu?).to_equal false
     end
+
+    it "to never have nested resources" do
+      expect(page.has_nested_resources?).to_equal false
+    end
   end
 
   describe "extends Resource" do
